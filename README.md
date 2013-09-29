@@ -1,5 +1,5 @@
 # Abandoned
-This project is **abandoned at 23 September 2013**. Developers who want to be free to continue on own fork.
+This project is **abandoned at 23 September 2013**. Developers who want to be free to continue on own fork. I personally started using and support a much better interface with the [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar).
 
 
 
