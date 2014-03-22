@@ -1,15 +1,15 @@
 {
     "name": "juy/profiler",
-    "description": "A profiler for Laravel 4.",
+    "description": "A profiler for Laravel 4",
     "keywords": ["laravel","profiler", "debug bar", "anbu"],
     "homepage": "http://github.com/juy/profiler",
     "license": "MIT",
     "authors": [
         {
             "name": "Sevdin Filiz",
+            "role": "Developer",
             "email": "angelside@users.sourceforge.net",
             "homepage": "http://juysoft.com",
-            "role": "Developer"
         }
     ],
     "require": {
