@@ -1,7 +1,6 @@
-# Abandoned
+# Abandoned [![Still Maintained][stillmaintained-img]][stillmaintained-url]
+
 This project is **abandoned at 23 September 2013**. Developers who want to be free to continue on own fork. I personally started using and support a much better interface with the [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar).
-
-
 
 # Profiler
 
@@ -113,3 +112,6 @@ Log::emergency('Your message here');
 ```
 
 These are color-coded in the Logs part of the profiler – colors may change in future to more accurately reflect the log type.
+
+[stillmaintained-img]: http://stillmaintained.com/juy/profiler.png
+[stillmaintained-url]: http://stillmaintained.com/juy/profiler
