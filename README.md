@@ -1,9 +1,7 @@
-# Abandoned [![Still Maintained][stillmaintained-img]][stillmaintained-url]
-
+## Abandoned [![Still Maintained][stillmaintained-img]][stillmaintained-url]
 This project is **abandoned at 23 September 2013**. Developers who want to be free to continue on own fork. I personally started using and support a much better interface with the [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar).
 
 # Profiler
-
 A profiler for Laravel 4. Backend based on sorora/omni, frontend based on loic-sharma/profiler, some features inspired by papajoker/profiler, some features original by myself.
 
 - [Profiler on Packagist](https://packagist.org/packages/juy/profiler)
@@ -12,7 +10,6 @@ A profiler for Laravel 4. Backend based on sorora/omni, frontend based on loic-s
 [![](https://dl.dropboxusercontent.com/u/76869590/laravel-package/juy-profiler.png)](https://dl.dropboxusercontent.com/u/76869590/laravel-package/juy-profiler.png "Click for big picture")
 
 ## Features
-
 - Environment info
 - Current controller/action info
 - Routes
@@ -52,7 +49,6 @@ Add the below line to the `aliases` array in `app/config/app.php` configuration 
 ```
 
 ## Configuration
-
 You will want to run the following command to publish the config to your application, otherwise it will be overwritten when the package is updated.
 
 ```shell
@@ -60,7 +56,6 @@ php artisan config:publish juy/profiler
 ```
 
 ### Profiler
-
 Set this option to `FALSE` to disable the profiler. By default, it is `NULL`, which makes the profiler refer to the app debug option in `config/app.php`.
 
 ```php
@@ -83,7 +78,6 @@ Profiler::disable();
 ## Usage
 
 ### Custom Timers
-
 To start a timer, all you need to do is:
     
 ```php
@@ -97,7 +91,6 @@ Profiler::end('my timer key');
 ```
 
 ## Logging
-
 Profiler utilizes Laravel's built in logging system and captures logged events. To log events, you can do (as you would with Laravel) any of these:
 
 ```php
@@ -113,5 +106,5 @@ Log::emergency('Your message here');
 
 These are color-coded in the Logs part of the profiler – colors may change in future to more accurately reflect the log type.
 
-[stillmaintained-img]: http://stillmaintained.com/juy/profiler.png
+[stillmaintained-img]: http://img.shields.io/badge/project-abandoned-red.svg?style=flat
 [stillmaintained-url]: http://stillmaintained.com/juy/profiler
