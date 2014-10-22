@@ -14,12 +14,25 @@
         @else
         <tr>
         @endif
+        <?php
+        $beforeFilters = $route->beforeFilters();
+        $strBeforeFilters = array();
+        foreach ($beforeFilters as $filter => $params):
+            $strBeforeFilters[] = $filter.($params?":".implode(",", $params):"");
+        endforeach;
+        $afterFilters = $route->afterFilters();
+
+        $strAfterFilters = array();
+        foreach ($afterFilters as $filter => $params):
+            $strAfterFilters[] = $filter.($params?":".implode(",", $params):"");
+        endforeach;
+        ?>
             <td>[{{ array_get($route->getMethods(), 0) }}]</td>
             <td>{{ $route->getPath() }}</td>
             <td>{{ $name }}</td>
-            <td>{{ $route->getAction() ?: 'Closure' }}</td>
-            <td>{{ implode('|', $route->getBeforeFilters()) }}</td>
-            <td>{{ implode('|', $route->getAfterFilters()) }}</td>
+            <td>{{ $route->getActionName() ?: 'Closure' }}</td>
+            <td>{{ implode('|', $strBeforeFilters) }}</td>
+            <td>{{ implode('|', $strAfterFilters) }}</td>
         </tr>
     @endforeach
 </table>
